@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:background="#e9e9e9"
+    android:layout_height="match_parent" >    
+
+ <TextView
+     android:id="@+id/imageView1"
+     android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#e9e9e9"
+        android:paddingBottom="20dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:text="Contact Explorer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#666666"
+        android:textSize="19dp" />
+
+<!-- <SearchView
+    android:id="@+id/searchView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:background="#f9f9f9"
+    android:layout_below="@+id/imageView1" >
+</SearchView> -->
+
+<AbsoluteLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="2dp"
+            android:layout_y="246dp" />
+
+    </AbsoluteLayout>
+
+<ListView
+    android:id="@+id/ListView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/imageView1"
+    android:background="#ffffff" >
+
+</ListView>
+    <com.google.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_x="2dp"
+        android:layout_y="416dp"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8429573372209071/7400646147"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+</RelativeLayout>

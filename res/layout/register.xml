@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:background="#ef4a4c"
+        android:src="@drawable/signup" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_x="2dp"
+        android:layout_y="416dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8429573372209071/7400646147"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_x="101dp"
+        android:layout_y="347dp"
+        android:background="#ef4a4c"
+        android:padding="15dp"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        android:layout_x="101dp"
+        android:layout_y="355dp"
+        android:background="#e9e9e9" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_x="55dp"
+        android:layout_y="152dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Your Mobile Number"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_x="54dp"
+        android:layout_y="235dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="11dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_x="65dp"
+        android:layout_y="292dp"
+        android:ems="10"
+        android:text="I Agree To Zinc&apos;s Terms And Conditions"
+        android:textColor="#ef4a4c"
+        android:textSize="12px" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="100dp"
+        android:layout_y="116dp"
+        android:text="I Already Have An Account"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ef4a4c"
+        android:textSize="14px" />
+
+</AbsoluteLayout>

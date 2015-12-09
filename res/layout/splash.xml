@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor2"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/webView3"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="44dp"
+        android:layout_x="116dp"
+        android:layout_y="354dp" />
+
+</AbsoluteLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name = "MyTextView">
+    <attr name="nmbr" format="string"></attr>
+    <attr name="cname" format="string"></attr>
+    </declare-styleable>
+</resources>

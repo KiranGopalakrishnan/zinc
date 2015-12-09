@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.google.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8429573372209071/7400646147"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ef4a4c"
+        android:src="@drawable/sync" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp"
+        android:paddingStart="50dp"
+        android:text="Sycing . . ."
+        android:gravity="center"
+        android:textColor="#ef4a4c"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/edittext_bg2"
+        android:text="ReSync"
+        android:textColor="#999999" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edittext_bg2"
+        android:text="View Contacts"
+        android:textColor="#999999" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/textView1"
+        android:background="#e9e9e9" />
+
+</RelativeLayout>
